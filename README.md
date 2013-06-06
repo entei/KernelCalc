@@ -1,4 +1,0 @@
-calc
-====
-
-Kernel-mode calculator.
