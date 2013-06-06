@@ -10,7 +10,7 @@
 /* Module proc file name. */
 #define CALC_PROC "calc"
 
-/* Module proc files names. */
+/* Module proc virt files names. */
 #define PROCFS_RESULT  "calc_result"
 #define PROCFS_FIRST   "calc_first"
 #define PROCFS_SECOND  "calc_second"
@@ -22,9 +22,11 @@
 #define ACCESS_TOKEN 0644
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Some interesting people :)");
+MODULE_AUTHOR("Pavlovsky ES");
+
 #define MODULE_PREFIX "[CALC_PROC] "
 
+//Read and write operations
 int proc_read(char*, char**, off_t, int, int*, void*);
 int proc_write(struct file*, const char*, unsigned long, void*);
 
